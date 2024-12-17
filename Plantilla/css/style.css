@@ -51,7 +51,6 @@ body{
 
 .container{
 
-    border: 1px solid red;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -110,7 +109,7 @@ body{
 
 .hero_main{
 
-    max-width: 1200px;
+    max-width: 1360px;
 
 }
 
@@ -324,3 +323,223 @@ body{
     line-height: 1.5;
 }
 
+#footer {
+
+    width: 100%;
+    height: 470px;
+    background: rgba(0,0,0,0.091);
+    color: black;
+    overflow: hidden;
+
+}
+
+footer .wrap>div{
+    float: left;
+    width: 420px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: black;
+    font-family:'Trebuchet MS';
+}
+
+#footer a{
+
+    text-decoration: none;
+    color: rgba(0,0,0,0.569);
+    transition: all 300ms;
+
+}
+
+#footer h5{
+    display: block;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family:BebasNeue;
+    font-size: 25px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+}
+
+#footer ul {
+
+    text-align: left;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#footer ul li {
+
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#footer ul li a {
+    
+    display: block;
+    height: 40px;
+    transition: all 300ms;
+}
+
+#footer ul li:hover a {
+
+    padding-left: 40px;
+    color: black;
+    width: 100%;
+}
+
+#footer iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#footer img {
+
+    margin-bottom: 15px;
+}
+
+#footer #browsers img {
+
+    width: 45px;
+
+}
+
+.cta--nav {
+
+    display: none;
+}
+
+@media (min-width:768px){
+
+    .nav_links{
+
+        position: unset;
+        transform: unset;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: unset;
+        padding: 0;
+        width: max-content;
+        display: flex;
+        gap: 1em;
+        height: 100%;
+    }
+
+    .nav_link {
+
+        display: flex;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        color: var(--grayish-blue);
+        position: relative;
+    }
+
+    .nav_link::before {
+
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: var(--lime-green);
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+    
+    .nav_link:hover::before {
+
+        opacity: 1;
+    }
+
+    .nav_menu {
+
+        display: none;
+    }
+
+    .cta--nav {
+
+        display: inline-block;
+    }
+
+    .hero_main {
+
+        width: 95%;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        height: 450px;
+        align-items: center;
+    }
+
+    .hero_background {
+        width: 50%;
+        height: 100%;
+        margin-top: 100px;
+        background-image: url("../images/img-hero.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left center;
+        border-radius: 900px;
+    }
+
+    .hero_background::before {
+
+        left: unset;
+        right: 0;
+        height: 550px;
+        border: 1px solid red;
+        background-position: 50px -45px;
+    }
+
+    .hero_texts {
+
+        width: 40%;
+        padding-bottom: 0;
+        margin: 0 auto;
+        text-align: start;
+
+    }
+
+    .hero_title {
+
+        margin: 0;
+    }
+
+    .easybank_container {
+
+        text-align: start;
+    }
+
+    .easybank_paragraph {
+        width: 550px;
+    }
+
+    .easybank_services {
+
+        margin: 0;
+        max-width: unset;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1.5em;
+    }
+
+    .easybank_icon {
+        margin-left: unset;
+    }
+
+    .articles_container {
+        text-align: start;
+    }
+    .articles_content {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+}
