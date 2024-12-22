@@ -69,6 +69,7 @@ body{
 .nav_img{
 
     display: block;
+    margin-top: 10px;
 }
 
 .nav_icon{
@@ -353,10 +354,11 @@ footer .wrap>div{
 
 #footer h5{
     display: block;
+    background: white;
     height: 50px;
     letter-spacing: 2px;
     text-align: center;
-    font-family:BebasNeue;
+    font-family: BebasNeue;
     font-size: 25px;
     line-height: 55px;
     color: black;
@@ -496,7 +498,6 @@ footer .wrap>div{
         left: unset;
         right: 0;
         height: 550px;
-        border: 1px solid red;
         background-position: 50px -45px;
     }
 
@@ -540,6 +541,7 @@ footer .wrap>div{
     }
     .articles_content {
         grid-template-columns: repeat(4,1fr);
+        gap: 1em;
     }
 
 }
